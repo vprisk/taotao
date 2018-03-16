@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>【淘淘商城商品管理服务层】</h3>
+	<h3>【淘淘商城门户内容管理服务层】</h3>
 </body>
 </html>
