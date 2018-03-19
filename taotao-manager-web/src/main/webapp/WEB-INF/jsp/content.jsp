@@ -88,7 +88,7 @@ var contentListToolbar = [{
     handler:function(){
     	var ids = TT.getSelectionsIds("#contentList");
     	if(ids.length == 0){
-    		$.messager.alert('提示','未选中商品!');
+    		$.messager.alert('提示','未选中内容!');
     		return ;
     	}
     	$.messager.confirm('确认','确定删除ID为 '+ids+' 的内容吗？',function(r){
