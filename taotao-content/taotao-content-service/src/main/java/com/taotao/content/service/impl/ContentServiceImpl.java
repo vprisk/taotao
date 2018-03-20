@@ -49,6 +49,14 @@ public class ContentServiceImpl implements ContentService {
 		tbContentMapper.deleteByExample(example);
 		return TaotaoResult.ok();
 	}
+	@Override
+	public List<TbContent> getContentList(long categoryId) {
+		TbContentExample example=new TbContentExample();
+		Criteria criteria = example.createCriteria();
+		criteria.andCategoryIdEqualTo(categoryId);
+		List<TbContent> list = tbContentMapper.selectByExample(example);
+		return list;
+	}
 
 
 }

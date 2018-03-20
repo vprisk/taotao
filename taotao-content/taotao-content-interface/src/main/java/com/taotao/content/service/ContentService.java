@@ -34,4 +34,11 @@ public interface ContentService {
 	 * @return
 	 */
 	public TaotaoResult deleteContent(List<Long> ids);
+	
+	/**
+	 * 根据内容分类id查询内容
+	 * @param categoryId
+	 * @return
+	 */
+	public List<TbContent> getContentList(long categoryId);
 }
