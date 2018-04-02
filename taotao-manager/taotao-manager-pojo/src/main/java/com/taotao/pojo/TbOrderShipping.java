@@ -1,8 +1,10 @@
 package com.taotao.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TbOrderShipping {
+@SuppressWarnings("serial")
+public class TbOrderShipping implements Serializable{
     private String orderId;
 
     private String receiverName;
